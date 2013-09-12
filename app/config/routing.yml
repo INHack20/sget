@@ -1,0 +1,7 @@
+in_hack20_user:
+    resource: "@INHack20UserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+    
+in_hack20_fos_user:
+    resource: "@INHack20UserBundle/Resources/config/routing.yml"

@@ -1,3 +1,4 @@
+
 <?php
 
 use Symfony\Component\HttpKernel\Kernel;
@@ -16,6 +17,8 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            new INHack20\Bundle\UserBundle\INHack20UserBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
